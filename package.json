@@ -1,7 +1,7 @@
 {
-  "name": "trello-power-up-tutorial-part-one",
+  "name": "trello-power-up-x1",
   "version": "0.0.1",
-  "description": "A Trello Power-Up",
+  "description": "A Trello Power-Up for X1 integration",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -15,7 +15,7 @@
     "node": "6.10.x"
   },
   "repository": {
-    "url": "https://github.com/trello/glitch-power-up-tutorial-part-one"
+    "url": "https://https://github.com/ServicetraceTestGH/TrelloPowerUp"
   },
   "license": "MIT",
   "keywords": [
