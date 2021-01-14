@@ -9,7 +9,8 @@ window.config.addEventListener("submit", function(event) {
     url: window.url.value,
     customer: window.cust.value,
     user: window.user.value,
-    password: window.pwd.value
+    password: window.pwd.value,
+    apikey: window.apikey.value
   };
 
   return t.set("board", "shared", boardConf).then(function() {
@@ -46,6 +47,11 @@ t.render(function() {
     t.get("board", "shared", "password").then(function(password) {
       //console.log(JSON.stringify(password, null, 2));
       window.pwd.value = password;
+    }),
+    
+    t.get("board", "shared", "apikey").then(function(apikey) {
+      //console.log(JSON.stringify(password, null, 2));
+      window.apikey.value = apikey;
     })
   ];
 });
